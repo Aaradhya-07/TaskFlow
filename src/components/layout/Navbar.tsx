@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {showSidebarToggle && (
             <button
               onClick={toggleSidebar}
-              className="text-gray-500 focus:outline-none lg:hidden mr-2"
+              className="text-gray-500 focus:outline-none mr-2"
             >
               <Menu size={24} />
             </button>
