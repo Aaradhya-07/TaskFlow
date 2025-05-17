@@ -140,57 +140,6 @@ assignTask(taskId: string, assigneeId: string): Promise<void>
 ```
 Assigns a task to a specific user.
 
-### Automation API
-
-#### Fetch Automations
-```typescript
-fetchAutomations(projectId: string): Promise<void>
-```
-Retrieves all automations for a specific project.
-
-#### Create Automation
-```typescript
-createAutomation(automation: Omit<Automation, 'id' | 'createdAt'>): Promise<string>
-```
-Creates a new automation rule and returns the automation ID.
-
-#### Update Automation
-```typescript
-updateAutomation(automationId: string, updates: Partial<Automation>): Promise<void>
-```
-Updates an existing automation with the specified changes.
-
-#### Delete Automation
-```typescript
-deleteAutomation(automationId: string): Promise<void>
-```
-Deletes an automation rule.
-
-### Notification API
-
-#### Fetch Notifications
-```typescript
-fetchNotifications(userId: string): Promise<void>
-```
-Retrieves all notifications for a specific user.
-
-#### Create Notification
-```typescript
-createNotification(notification: Omit<Notification, 'id' | 'createdAt'>): Promise<string>
-```
-Creates a new notification and returns the notification ID.
-
-#### Mark as Read
-```typescript
-markAsRead(notificationId: string): Promise<void>
-```
-Marks a specific notification as read.
-
-#### Mark All as Read
-```typescript
-markAllAsRead(userId: string): Promise<void>
-```
-Marks all notifications for a user as read.
 
 ## Technology Stack
 
@@ -209,8 +158,5 @@ To run TaskFlow locally:
 3. Configure Firebase credentials in `src/lib/firebase.ts`
 4. Start the development server with `npm start`
 
-## License
-
-TaskFlow is licensed under the MIT License.
 
         
